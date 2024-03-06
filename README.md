@@ -1,23 +1,24 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`Desenvolvimento de um Sistema Sociotécnico Inovador`
 
-`SEMESTRE`
+`5° Semestre`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O objetivo do projeto é a criação de uma plataforma e-commerce de roupas estilo brechó, que satisfaça a necessidade de nossa cliente com a venda de produtos e a gestão de vendas
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Gabriel Martins Xavier
+* Leonardo Silva Jaques
+* Marcos Luiz Vidal
+* Rafael Henrique Pereira
+* Renato Conceição Silva
 
 ## Orientador
 
-* Nome completo do professor 1
+* Sandra Maria Silveira
 
 ## Instruções de utilização
 
