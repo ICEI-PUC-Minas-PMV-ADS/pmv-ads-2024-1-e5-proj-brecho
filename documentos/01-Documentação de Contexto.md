@@ -1,41 +1,25 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+O projeto em questão visa desenvolver uma aplicação web inovadora no formato de brechó, destinada à comercialização de uma ampla variedade de itens usados. Com base na crescente demanda por alternativas sustentáveis ​​de consumo e na valorização do reaproveitamento de produtos, esta iniciativa busca proporcionar uma plataforma online que conecte vendedores e compradores interessados em adquirir itens de segunda mão, como roupas, acessórios, brinquedos, livros e outros artigos usados.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Com as taxas abusivas das plataformas de marketplace existentes, está cada vez pior para os microempreendedores lucrarem com suas "lojinhas" virtuais.
+Nesse sentido, a falta de uma plataforma centralizada onde o próprio vendedor tenha controle de ponta a ponta dificulta a conexão entre aqueles que desejam vender e os potenciais compradores, limitando as opções de acesso a esses produtos de segunda mão. Isso se dá por conta do repasse que os vendedores devem fazer aos clientes para compensar as taxas cobradas. 
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+O objetivo principal deste projeto é desenvolver uma aplicação web eficiente e intuitiva que facilite o processo de compra e venda de itens usados, promovendo a economia circular e incentivando um estilo de vida mais sustentável. Por meio desta plataforma, os usuários terão a oportunidade de encontrar uma ampla variedade de produtos de segunda mão, contribuindo para a redução do desperdício e o prolongamento do ciclo de vida dos itens.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+A criação deste brechó online se justifica pela necessidade de uma alternativa viável e acessível para a compra e venda de produtos usados. Ao oferecer uma plataforma dedicada exclusivamente a itens de segunda mão, o projeto visa promover uma mudança de mentalidade em relação ao consumo, incentivando a reutilização e a reciclagem de produtos. Além disso, a iniciativa busca fomentar uma comunidade engajada em práticas sustentáveis, contribuindo para a construção de um futuro mais consciente e ambientalmente responsável. A plataforma centralizada também auxilia aos vendedores cobrarem preços mais justos dos clientes, uma vez que não terão as taxas cobradas pelas plataformas de Marketplace.
 
 ## Relação com a Extensão Universitária
 
-Relacionar a situação-problema da organização com o impacto social esperado com a implantação do sistema sociotécnico.
+A relação entre o brechó online de itens usados e a extensão universitária é crucial. As universidades podem contribuir por meio de pesquisa, educação e parcerias comunitárias. Elas podem promover conscientização sobre consumo sustentável, desenvolver habilidades necessárias para operar plataformas de brechó e facilitar projetos interdisciplinares. Essa colaboração pode criar oportunidades para estudantes e impactar positivamente a comunidade universitaria.
+
 
 ## Descrição do Parceiro
 
-Apresente uma descrição resumida sobre a organização onde o projeto será desenvolvido para que possa ser compreendido o cenário sistema sociotécnico.
+A parceira é uma microempreendedora que utiliza uma plataforma terceira (enjoei.com) para realizar as vendas. A mesma trabalha com venda de itens usados há cerca de 4 anos e está em busca de uma plataforma dedicada para fugir das taxas do marketplace.
