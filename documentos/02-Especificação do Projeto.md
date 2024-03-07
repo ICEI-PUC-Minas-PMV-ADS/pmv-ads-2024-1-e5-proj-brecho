@@ -12,7 +12,7 @@ o	Descreva brevemente a arquitetura definida para o projeto e as tecnologias a s
 
 ## Project Model Canvas
 
-<img src="documentos/img/modelagem_dados.png" />
+<img src="img/modelagem_dados.png" />
 
 Colocar a imagem do modelo construído apresentando a proposta de solução.
 
