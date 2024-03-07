@@ -12,7 +12,7 @@ o	Descreva brevemente a arquitetura definida para o projeto e as tecnologias a s
 
 ## Project Model Canvas
 
-<img src="/img/Project_Model_Canvas_Renova.png" />
+<img src="documentos/img/Project_Model_Canvas_Renova.png" />
 
 Colocar a imagem do modelo construído apresentando a proposta de solução.
 
