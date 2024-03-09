@@ -10,3 +10,5 @@ O projeto em questão visa desenvolver uma aplicação web inovadora no formato 
 
 <img src="img/project_model_canvas_renova.png" />
 
+<img src="img/project_model_canvas_renova.png" />
+
