@@ -8,7 +8,8 @@ O projeto em questão visa desenvolver uma aplicação web inovadora no formato 
 
 ## Project Model Canvas
 
-<img src="img/project_model_canvas_renova.png" />
+![project_model_canvas_renova](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t1-pmv-ads-2024-1-e3-proj-brecho/assets/103227546/1333e8f6-a4a0-4916-88af-56315f606d6d)
+
 
 
 
