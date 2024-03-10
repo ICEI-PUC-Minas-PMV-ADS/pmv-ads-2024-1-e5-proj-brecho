@@ -12,6 +12,7 @@ O projeto em questão visa desenvolver uma aplicação web inovadora no formato 
 
 ## Diagrama de Caso de Uso
 
+![Projeto Brechó](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t1-pmv-ads-2024-1-e3-proj-brecho/assets/103543979/3facab68-03d7-447e-8408-54b57ba1aa3c)
 
 
 
