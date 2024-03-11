@@ -15,6 +15,7 @@ O objetivo do projeto é a criação de uma plataforma e-commerce de roupas esti
 * Marcos Luiz Vidal
 * Rafael Henrique Pereira
 * Renato Conceição Silva
+* Rafael N
 
 ## Orientador
 
