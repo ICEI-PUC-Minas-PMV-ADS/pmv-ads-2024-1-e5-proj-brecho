@@ -14,10 +14,7 @@ o	Descreva brevemente a arquitetura definida para o projeto e as tecnologias a s
 
 <img src="img/project_model_canvas_renova.png" />
 
-Colocar a imagem do modelo construído apresentando a proposta de solução.
 
-> **Links Úteis**:
-> Disponíveis em material de apoio do projeto
 
 ## Requisitos
 
@@ -25,32 +22,33 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir o cadastro de fotos, título, categoria, tamanho, marca, estado, detalhes e preço do produto. | ALTA | 
-|RF-002| Editar informações, pausar/ativar venda e excluir produtos.   | ALTA |
-|RF-003| Receber ofertas, aceitar/recusar ofertas, gerar etiquetas de envio e registrar a venda.   | ALTA |
-|RF-004| Responder perguntas, informar status do pedido e resolver problemas de entrega/devolução.   | ALTA |
-|RF-005| Filtrar por categoria, tamanho, marca, estado, preço; visualizar fotos e detalhes; ordenar por relevância, preço ou data.   | ALTA |
-|RF-006| Fazer ofertas, efetuar pagamento, selecionar método de envio e rastrear pedido.   | ALTA |
-|RF-007| Avaliar qualidade do produto e atendimento; deixar comentários sobre a experiência de compra.   | ALTA |
-|RF-008| Cadastrar nome, e-mail, senha, endereço e definir preferências de recebimento de notificações.   | ALTA |
-|RF-009| Editar informações, alterar senha e visualizar histórico de compras e vendas.   | MÉDIA |
-|RF-010| Enviar e receber mensagens com outros usuários.   | MÉDIA |
-|RF-011| Cadastrar, editar e excluir usuários; gerenciar permissões de acesso.   | ALTA |
-|RF-012| Remover produtos inativos/irregulares e analisar denúncias de produtos.   | MÉDIA |
-|RF-013| Visualizar relatórios de vendas e compras e monitorar o desempenho da plataforma.   | MÉDIA |
+|ID    |Descrição do Requisito  |Prioridade|
+|------|--------------------------------------------|----|
+|RF_001|Permitir o cadastro de fotos, título, categoria, tamanho, marca, estado, detalhes e preço do produto.|ALTA| 
+|RF_002|Editar informações, pausar/ativar venda e excluir produtos.|ALTA|
+|RF_003|Receber ofertas, aceitar/recusar ofertas, gerar etiquetas de envio e registrar a venda.|ALTA|
+|RF_004|Responder perguntas, informar status do pedido e resolver problemas de entrega/devolução.|ALTA|
+|RF_005|Filtrar por categoria, tamanho, marca, estado, preço; visualizar fotos e detalhes; ordenar por relevância, preço ou data.|ALTA|
+|RF_006|Fazer ofertas, efetuar pagamento, selecionar método de envio e rastrear pedido.|ALTA|
+|RF_007|Avaliar qualidade do produto e atendimento; deixar comentários sobre a experiência de compra.|ALTA|
+|RF_008|Cadastrar nome, e-mail, senha, endereço e definir preferências de recebimento de notificações.|ALTA|
+|RF_009|Editar informações, alterar senha e visualizar histórico de compras e vendas.|MÉDIA|
+|RF_010|Enviar e receber mensagens com outros usuários.|MÉDIA|
+|RF_011|Cadastrar, editar e excluir usuários; gerenciar permissões de acesso.|ALTA|
+|RF_012|Remover produtos inativos/irregulares e analisar denúncias de produtos.| MÉDIA|
+|RF_013|Visualizar relatórios de vendas e compras e monitorar o desempenho da plataforma.|MÉDIA|
+
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| Plataforma deve funcionar em desktops, tablets e smartphones. | ALTA | 
-|RNF-002| Carregamento rápido e eficiente das páginas. |  ALTA | 
-|RNF-003| Lidar com um grande número de usuários simultâneos. |  ALTA |
-|RNF-004| Proteger informações dos usuários, transações financeiras e estar em conformidade com leis de proteção de dados. |  ALTA |
-|RNF-005| Interface intuitiva, processo de compra/venda simples e rápido, recursos de ajuda e suporte aos usuários. |  ALTA |
-|RNF-006| Código bem documentado, fácil de manter e atualizar com novas funcionalidades. |  ALTA |
-|RNF-007| Monitorar o bom funcionamento da plataforma, desempenho e detectar/corrigir erros e falhas. |  ALTA |
+|RNF_001| Plataforma deve funcionar em desktops, tablets e smartphones. | ALTA | 
+|RNF_002| Carregamento rápido e eficiente das páginas. |  ALTA | 
+|RNF_003| Lidar com um grande número de usuários simultâneos. |  ALTA |
+|RNF_004| Proteger informações dos usuários, transações financeiras e estar em conformidade com leis de proteção de dados. |  ALTA |
+|RNF_005| Interface intuitiva, processo de compra/venda simples e rápido, recursos de ajuda e suporte aos usuários. |  ALTA |
+|RNF_006| Código bem documentado, fácil de manter e atualizar com novas funcionalidades. |  ALTA |
+|RNF_007| Monitorar o bom funcionamento da plataforma, desempenho e detectar/corrigir erros e falhas. |  ALTA |
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
