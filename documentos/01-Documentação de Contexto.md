@@ -29,4 +29,4 @@ Assim, a relação entre um brechó online de itens usados e a extensão univers
 
 ## Descrição do Parceiro
 
-A parceira é uma microempreendedora que utiliza uma plataforma terceira (enjoei.com) para realizar as vendas. A mesma trabalha com venda de itens usados há cerca de 4 anos e está em busca de uma plataforma dedicada para fugir das taxas do marketplace.
+A parceira é uma microempreendedora que utiliza uma plataforma terceira (enjoei.com) para realizar as vendas de produtos diversos. A mesma trabalha com venda de itens usados há cerca de 4 anos e está em busca de uma plataforma dedicada para fugir das taxas do marketplace. 
