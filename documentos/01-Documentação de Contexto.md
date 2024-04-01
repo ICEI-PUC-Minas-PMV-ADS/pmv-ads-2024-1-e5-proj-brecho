@@ -17,8 +17,15 @@ A criação deste brechó online se justifica pela necessidade de uma alternativ
 
 ## Relação com a Extensão Universitária
 
-A relação entre o brechó online de itens usados e a extensão universitária é crucial. As universidades podem contribuir por meio de pesquisa, educação e parcerias comunitárias. Elas podem promover conscientização sobre consumo sustentável, desenvolver habilidades necessárias para operar plataformas de brechó e facilitar projetos interdisciplinares. Essa colaboração pode criar oportunidades para estudantes e impactar positivamente a comunidade universitaria.
+A relação entre um brechó online de itens usados e a extensão universitária é fundamental, pois traz benefícios diversos para a comunidade, a universidade e o parceiro envolvido, além de promover um impacto positivo na equipe que desenvolve a aplicação.
 
+Para a comunidade e a universidade, essa parceria se traduz em uma série de vantagens. As instituições de ensino superior podem desempenhar um papel crucial ao promover a conscientização sobre consumo sustentável, educando tanto os estudantes quanto a comunidade em geral sobre a importância de reduzir o desperdício e reutilizar produtos. Além disso, a universidade pode fornecer recursos e apoio para desenvolver habilidades necessárias para operar plataformas de brechó, capacitando os alunos e membros da comunidade para gerenciar e administrar esse tipo de negócio de forma eficaz.
+
+Para o parceiro envolvido, os benefícios também são significativos. Ao colaborar com uma universidade, o parceiro pode acessar uma base de talentos diversificada e altamente qualificada, incluindo estudantes e professores. Além disso, a associação com uma instituição de renome pode aumentar a credibilidade e a visibilidade do brechó online, fortalecendo sua posição no mercado.
+
+Por fim, para a equipe que está desenvolvendo a aplicação do brechó online, essa colaboração oferece uma valiosa experiência prática e a oportunidade de aplicar seus conhecimentos em um contexto real. Trabalhar em um projeto que tem impacto tangível na comunidade e na vida das pessoas pode ser extremamente gratificante e motivador. Além disso, a interação com o parceiro e a comunidade permite que a equipe compreenda melhor as necessidades e os desafios do mercado, aprimorando suas habilidades e competências profissionais ao longo do processo de desenvolvimento.
+
+Assim, a relação entre um brechó online de itens usados e a extensão universitária não apenas beneficia a comunidade e a universidade, mas também o parceiro envolvido e a equipe responsável pelo desenvolvimento da aplicação, criando um ciclo virtuoso de colaboração e crescimento mútuo.
 
 ## Descrição do Parceiro
 
