@@ -1,14 +1,10 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+Visando a criação de um site Web para contornar a taxa abusiva dos sites de marketplace desenvolvemos esse projeto, para mais informações de contexto acesse: <span style="color:red"><a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
 ## Arquitetura e Tecnologias
 
-As tecnologias usadas no nosso projeto foram: PHP, o Framework Laravel, para banco de dados foi usado o PostgreSQL
+As tecnologias usadas no nosso projeto foram: PHP, o Framework Laravel, e para banco de dados foi usado o PostgreSQL
 
 ## Project Model Canvas
 
@@ -24,19 +20,17 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    |Descrição do Requisito  |Prioridade|
 |------|--------------------------------------------|----|
-|RF_001|Permitir o cadastro de fotos, título, categoria, tamanho, marca, estado, detalhes e preço do produto.|ALTA| 
-|RF_002|Editar informações, pausar/ativar venda e excluir produtos.|ALTA|
-|RF_003|Receber ofertas, aceitar/recusar ofertas, gerar etiquetas de envio e registrar a venda.|ALTA|
-|RF_004|Responder perguntas, informar status do pedido e resolver problemas de entrega/devolução.|ALTA|
-|RF_005|Filtrar por categoria, tamanho, marca, estado, preço; visualizar fotos e detalhes; ordenar por relevância, preço ou data.|ALTA|
-|RF_006|Fazer ofertas, efetuar pagamento, selecionar método de envio e rastrear pedido.|ALTA|
-|RF_007|Avaliar qualidade do produto e atendimento; deixar comentários sobre a experiência de compra.|ALTA|
-|RF_008|Cadastrar nome, e-mail, senha, endereço e definir preferências de recebimento de notificações.|ALTA|
-|RF_009|Editar informações, alterar senha e visualizar histórico de compras e vendas.|MÉDIA|
-|RF_010|Enviar e receber mensagens com outros usuários.|MÉDIA|
-|RF_011|Cadastrar, editar e excluir usuários; gerenciar permissões de acesso.|ALTA|
-|RF_012|Remover produtos inativos/irregulares e analisar denúncias de produtos.| MÉDIA|
-|RF_013|Visualizar relatórios de vendas e compras e monitorar o desempenho da plataforma.|MÉDIA|
+|RF_001|Permitir o CRUD dos produtos.|ALTA| 
+|RF_002|Permitir o CRUD dos usuários.|ALTA| 
+|RF_003|Filtrar itens por (categoria, marca, estado, preço, relevância.|ALTA|
+|RF_004|Enviar usuario para o Whatsapp do vendedor a fim de finalizar a venda.|ALTA|
+|RF_005|Avaliar qualidade do produto e atendimento.|ALTA|
+|RF_006|Visualizar histórico de compras e vendas.|BAIXO|
+|RF_007|Gerenciar permissões de acesso.|ALTA|
+|RF_008|Gerenciar produtos da loja.|ALTA|
+|RF_009|Favoritar produtos.|MÉDIA|
+|RF_010|Adicionar e retirar produtos do carrinho de compras.|MÉDIA|
+|RF_011|Visualizar relatórios de vendas e compras e monitorar o desempenho da plataforma.|MÉDIA|
 
 ### Requisitos não Funcionais
 
@@ -50,21 +44,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF_006| Código bem documentado, fácil de manter e atualizar com novas funcionalidades. |  ALTA |
 |RNF_007| Monitorar o bom funcionamento da plataforma, desempenho e detectar/corrigir erros e falhas. |  ALTA |
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
@@ -74,26 +53,16 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Não pode ser desenvolvido um módulo de backend        |
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
-
 ## Diagrama de Casos de Uso 
 
-![Projeto Brechó (2)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t1-pmv-ads-2024-1-e3-proj-brecho/assets/103543979/f22d5fec-00b7-4b5c-9640-6d531d67c861)
+![Projeto Brechó (3)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t1-pmv-ads-2024-1-e3-proj-brecho/assets/103543979/a750b869-9db9-4c1f-8b9c-e6764cf04ad7)
 
 ## Modelo ER (Projeto Conceitual)
-
-O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
 
 ![Diagrama ER Brechó (2)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t1-pmv-ads-2024-1-e3-proj-brecho/assets/103543979/c22ce97e-28f7-4184-926c-546ba7ee8795)
 
 
 
 ## Projeto da Base de Dados
-
-O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
 
 <img src="img/modelagem_dados.png" />
