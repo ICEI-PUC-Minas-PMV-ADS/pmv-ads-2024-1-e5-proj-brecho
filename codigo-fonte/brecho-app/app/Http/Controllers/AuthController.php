@@ -21,6 +21,14 @@ class AuthController extends Controller
     {
         $data = $request->only(['first_name', 'last_name', 'email', 'password', 'phone']);
 
+        $user_exists = User::where('email', $data['email'])->first();
+
+        if ($user_exists) {
+            return back()->withErrors([
+                'email' => 'O email informado já existe!',
+            ]);
+        }
+
         $data['password'] = bcrypt($data['password']);
 
         $user = User::create($data);
