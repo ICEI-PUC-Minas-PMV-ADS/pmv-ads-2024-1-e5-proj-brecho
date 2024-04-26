@@ -9,6 +9,7 @@ services:
         working_dir: /var/www/
         volumes:
             - ./:/var/www
+            - ./storage:/var/www/html/storage
         networks:
             - laravel
 
@@ -19,6 +20,7 @@ services:
             - "8080:80"
         volumes:
             - ./:/var/www
+            - ./storage:/var/www/html/storage
             - ./docker/nginx/:/etc/nginx/conf.d/
         networks:
             - laravel
@@ -37,6 +39,23 @@ services:
             - "5432:5432"
         networks:
             - laravel
+
+    pgadmin:
+        image: dpage/pgadmin4:latest
+        restart: unless-stopped
+        depends_on:
+            - db
+        environment:
+            PGADMIN_DEFAULT_EMAIL: rafaelhpmg@gmail.com
+            PGADMIN_DEFAULT_PASSWORD: root
+        user: '$UID:$GID'
+        ports:
+            - 8989:80
+        volumes:
+            - ./.docker/pgadmin/dbdata:/var/lib/pgadmin
+        networks:
+            - laravel
+
 networks:
     laravel:
         driver: bridge
