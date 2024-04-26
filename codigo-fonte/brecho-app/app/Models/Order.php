@@ -18,9 +18,11 @@ class Order extends Model
         'number',
         'complement',
         'district',
+        'cep',
         'city',
         'state',
-        'total'
+        'total',
+        'track_code',
     ];
 
     public function user()
@@ -28,7 +30,7 @@ class Order extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function orderDetails()
+    public function order_details()
     {
         return $this->hasMany(OrderDetail::class);
     }

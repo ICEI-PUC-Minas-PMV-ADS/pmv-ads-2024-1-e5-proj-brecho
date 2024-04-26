@@ -93,6 +93,7 @@ class ShoppingCartController extends Controller
             'district' => $request->bairro,
             'city' => $request->city,
             'state' => $request->state,
+            'cep' => $request->cep,
             'total' =>  $total
         ]);
 
@@ -103,7 +104,8 @@ class ShoppingCartController extends Controller
                 'order_id' => $order->id,
                 'product_id' => $item->product_id,
                 'quantity' => $item->quantity,
-                'price' => $item->product->price
+                'price' => $item->product->price,
+                'total' => $item->product->price * $item->quantity
             ]);
 
             $item->delete();
