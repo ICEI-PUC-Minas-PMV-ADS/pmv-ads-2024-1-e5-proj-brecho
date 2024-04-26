@@ -25,37 +25,6 @@ services:
         networks:
             - laravel
 
-    db:
-        image: postgres:15
-        restart: unless-stopped
-        environment:
-            PGPASSWORD: 'password'
-            POSTGRES_DB: 'brecho'
-            POSTGRES_USER: 'postgres'
-            POSTGRES_PASSWORD: 'password'
-        volumes:
-            - ./.docker/postgresql/dbdata:/var/lib/postgresql
-        ports:
-            - "5432:5432"
-        networks:
-            - laravel
-
-    pgadmin:
-        image: dpage/pgadmin4:latest
-        restart: unless-stopped
-        depends_on:
-            - db
-        environment:
-            PGADMIN_DEFAULT_EMAIL: rafaelhpmg@gmail.com
-            PGADMIN_DEFAULT_PASSWORD: root
-        user: '$UID:$GID'
-        ports:
-            - 8989:80
-        volumes:
-            - ./.docker/pgadmin/dbdata:/var/lib/pgadmin
-        networks:
-            - laravel
-
 networks:
     laravel:
         driver: bridge
