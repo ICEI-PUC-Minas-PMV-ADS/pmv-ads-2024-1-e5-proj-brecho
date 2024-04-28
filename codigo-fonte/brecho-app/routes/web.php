@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Models\Product as ProductModel;
 use App\Http\Controllers\AuthController as AuthController;
-
+use App\Http\Controllers\ReportController as ReportController;
 
 Route::get('/', [ProductController::class, 'index'])->name('index');
 
@@ -23,3 +23,6 @@ Route::group(['prefix' => 'auth'], function () {
     Route::post('/register', [AuthController::class, 'store'])->name('auth.store');
     Route::get('/logout', [AuthController::class, 'logout'])->name('auth.logout');
 });
+
+// Relatórios
+Route::get('/admin/reports', [ReportController::class, 'generate_report'])->name('admin.reports');
