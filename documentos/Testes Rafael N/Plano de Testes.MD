@@ -1,0 +1,4 @@
+| Teste                                                                      | Funcionou                                                                  | Não Funcionou                                                |
+|----------------------------------------------------------------------------|----------------------------------------------------------------------------|--------------------------------------------------------------|
+| Ao apertar o botão "PDF", um download é feito contendo os dados de pedidos | Ao Clicar no botão, o download é feito corretamente                        | Ao Clicar no botão, o download não é feito corretamente      |
+| O recurso so pode ser acessado por um administrador                        | Ao acessar com contas de usuário que não sejam adm o recurso é bloqueado   | Ao acessar com contas que não são adm, o recurso é permitido |
