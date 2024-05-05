@@ -25,4 +25,4 @@ Route::group(['prefix' => 'auth'], function () {
 });
 
 // Relatórios
-Route::get('/admin/reports', [ReportController::class, 'generate_report'])->name('admin.reports');
+Route::get('/admin/reports', [ReportController::class, 'generate_report'])->name('admin.reports')->middleware('auth');

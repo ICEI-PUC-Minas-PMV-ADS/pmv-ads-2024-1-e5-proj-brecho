@@ -15,21 +15,21 @@
 
 </head>
 
-<body class="font-sans antialiased bg-gray-100 h-screen">
-    <x-navbar />
+<body class="font-sans antialiased bg-gray-100 h-screen my-5 py-5">
 
     <section class="mt-5" id='content'>
         <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto lg:py-0">
 
             <!-- Download PDF -->
 
-            <div class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0">
-                <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+            <div class="">
+                <div class="">
 
-                    <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
+                    <h1
+                        class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl text-center my-5 py-5">
                         Relatório de Compras e Vendas
                     </h1>
-
+                    <br />
                     <!-- Pedidos -->
                     <div class="overflow-x-auto">
                         <table class="min-w-full border-collapse">
@@ -103,11 +103,12 @@
     <br />
     <br />
     <br />
-    
-     <!-- Chart component -->
-     <canvas id="myChart"></canvas>
 
-    <button id="download-pdf">Download PDF</button>
+    <div class="flex justify-center items-center">
+        <button id="download-pdf">
+            PDF
+        </button>
+    </div>
 
     <script>
         document.getElementById('download-pdf').addEventListener('click', function() {
@@ -137,7 +138,9 @@
         });
     </script>
 
-
+    <!-- Chart component
+    
+    <canvas id="myChart"></canvas>
     <script>
         var dataFromBlade = {!! json_encode($orders) !!};
         // console.log(dataFromBlade[0]['total'])
@@ -191,7 +194,7 @@
             options: options
         });
     </script>
-
+    -->
 </body>
 
 </html>
