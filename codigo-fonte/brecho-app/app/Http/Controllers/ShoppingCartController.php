@@ -7,6 +7,7 @@ use App\Models\OrderDetail;
 use App\Models\Product;
 use App\Models\ShoppingCart;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class ShoppingCartController extends Controller
 {
@@ -74,11 +75,20 @@ class ShoppingCartController extends Controller
         $cart = ShoppingCart::where('user_id', $user->id)->get();
         $total = 0;
 
+        if(count($cart) == 0) {
+            $request->session()->flash('error', 'Carrinho vazio!');
+            return redirect()->route('shopping-cart');
+        }
+
         foreach ($cart as $item) {
             $total += $item->product->price * $item->quantity;
 
             $product = Product::where('id', $item->product_id)->first();
-            $product->quantity -= 1;
+
+            if($product->quantity > 0) {
+                $product->quantity -= 1;
+            }
+
             $product->save();
         }
 
@@ -113,6 +123,11 @@ class ShoppingCartController extends Controller
 
         $request->session()->flash('success', 'Pedido realizado com sucesso!');
 
-        return redirect()->route('shopping-cart');
+        $message = 'Realizei um pedido no valor de *R$' . $total . '* no site da loja.%0ADesejo os seguintes produtos:%0A';
+        foreach ($cart as $item) {
+            $message .= '- ' . $item->product->name . ' - ' . $item->quantity . ' unid - ' . 'R$ ' . $item->product->price * $item->quantity . '.%0A';
+        }
+
+        return Redirect::away("https://api.whatsapp.com/send?phone=$user->phone&text=$message");
     }
 }
