@@ -44,4 +44,19 @@ class Product extends Model
     {
         return $this->hasMany(OrderDetail::class);
     }
+
+    public function bookmarks()
+    {
+        return $this->hasMany(UserBookmarks::class);
+    }
+
+    public function reviews()
+    {
+        return $this->hasMany(ProductReview::class)->orderBy('created_at', 'desc');
+    }
+
+    public function averageRating()
+    {
+        return round($this->reviews()->avg('rating') ?? 0);
+    }
 }
