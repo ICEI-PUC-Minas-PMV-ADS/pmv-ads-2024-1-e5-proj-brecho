@@ -9,7 +9,15 @@ use App\Http\Controllers\AuthController as AuthController;
 use App\Http\Controllers\ReportController as ReportController;
 
 Route::get('/', [ProductController::class, 'index'])->name('index');
+Route::get('/product/{id}', [ProductController::class, 'show'])->name('product');
+Route::post('/product/{id}/review', [ProductController::class, 'review'])->name('product.review')->middleware('auth');
 
+// Favoritos
+Route::get('/user-bookmarks', [ProductController::class, 'user_bookmarks'])->name('user-bookmarks')->middleware('auth');
+Route::post('/add-bookmark', [ProductController::class, 'add_bookmark'])->name('add-bookmark')->middleware('auth');
+Route::post('/remove-bookmark', [ProductController::class, 'remove_bookmark'])->name('remove-bookmark')->middleware('auth');
+
+// Carrinho de compras
 Route::get('/shopping-cart', [ShoppingCartController::class, 'index'])->name('shopping-cart')->middleware('auth');
 Route::post('/add-to-cart', [ShoppingCartController::class, 'addToCart'])->name('add-to-cart')->middleware('auth');
 Route::get('/remove-from-cart', [ShoppingCartController::class, 'removeFromCart'])->name('remove-from-cart')->middleware('auth');

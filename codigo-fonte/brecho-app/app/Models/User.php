@@ -70,4 +70,9 @@ class User extends Authenticatable implements FilamentUser, HasName
     {
         return $this->hasMany(Order::class);
     }
+
+    public function bookmarks()
+    {
+        return $this->hasMany(UserBookmarks::class);
+    }
 }
