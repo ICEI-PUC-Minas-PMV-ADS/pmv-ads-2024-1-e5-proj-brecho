@@ -27,7 +27,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF_005|Avaliar qualidade do produto e atendimento.|ALTA|
 |RF_006|Visualizar histórico de compras e vendas.|BAIXO|
 |RF_007|Gerenciar permissões de acesso.|ALTA|
-|RF_008|Gerenciar produtos da loja.|ALTA|
+|RF_008|Visualizar produtos da loja.|ALTA|
 |RF_009|Favoritar produtos.|MÉDIA|
 |RF_010|Adicionar e retirar produtos do carrinho de compras.|MÉDIA|
 |RF_011|Visualizar relatórios de vendas e compras e monitorar o desempenho da plataforma.|MÉDIA|
