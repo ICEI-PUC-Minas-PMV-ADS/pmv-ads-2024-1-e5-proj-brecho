@@ -4,7 +4,7 @@
 
             <div class="flex space-x-4">
                 <div>
-                    <a href="#" class="flex items-center py-5 px-2 text-gray-700 text-2xl hover:text-gray-900">
+                    <a href="/" class="flex items-center py-5 px-2 text-gray-700 text-2xl hover:text-gray-900">
                         <span class="font-bold">Brechó</span>
                     </a>
                 </div>

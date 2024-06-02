@@ -45,6 +45,13 @@ class UserResource extends Resource
                     ->required()
                     ->placeholder('Digite o sobrenome do usuário')
                     ->maxLength(255),
+
+                Forms\Components\TextInput::make('email')
+                    ->label('Email')
+                    ->required()
+                    ->email()
+                    ->placeholder('Digite o email do usuário')
+                    ->maxLength(255),
                 Forms\Components\TextInput::make('phone')
                     ->label('Telefone')
                     ->required()

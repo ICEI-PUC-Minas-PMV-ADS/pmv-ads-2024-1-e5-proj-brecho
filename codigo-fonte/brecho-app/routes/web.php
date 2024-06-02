@@ -22,6 +22,8 @@ Route::get('/shopping-cart', [ShoppingCartController::class, 'index'])->name('sh
 Route::post('/add-to-cart', [ShoppingCartController::class, 'addToCart'])->name('add-to-cart')->middleware('auth');
 Route::get('/remove-from-cart', [ShoppingCartController::class, 'removeFromCart'])->name('remove-from-cart')->middleware('auth');
 Route::post('/checkout', [ShoppingCartController::class, 'checkout'])->name('checkout')->middleware('auth');
+Route::post('/increase-quantity', [ShoppingCartController::class, 'increaseQuantity'])->name('increase-quantity')->middleware('auth');
+Route::post('/decrease-quantity', [ShoppingCartController::class, 'decreaseQuantity'])->name('decrease-quantity')->middleware('auth');
 
 //Auth
 Route::group(['prefix' => 'auth'], function () {
