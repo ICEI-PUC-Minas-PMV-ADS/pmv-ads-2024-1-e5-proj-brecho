@@ -11,11 +11,14 @@ use Filament\Forms\Form;
 use Filament\Infolists\Infolist;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Filters\Filter;
+use Filament\Tables\Filters\QueryBuilder\Constraints\DateConstraint;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 use Filament\Infolists;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Malzariey\FilamentDaterangepickerFilter\Filters\DateRangeFilter;
 
 class OrderResource extends Resource
 {
@@ -122,7 +125,12 @@ class OrderResource extends Resource
             ])
             ->filters([
                 SelectFilter::make('status')
-                    ->options(static::$statuses)
+                    ->options(static::$statuses),
+                DateRangeFilter::make('created_at')->
+                    label('Data de Realização')->
+                    placeholder('Selecione o intervalo de datas')->
+                    timezone('America/Sao_Paulo')->
+                    alwaysShowCalendar(),
             ])
             ->actions([
                 Tables\Actions\ViewAction::make(),

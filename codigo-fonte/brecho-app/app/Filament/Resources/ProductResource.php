@@ -16,16 +16,10 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class ProductResource extends Resource
 {
     protected static ?string $model = Product::class;
-
     protected static ?string $modelLabel = 'Produto';
     protected static ?string $navigationIcon = 'heroicon-o-archive-box';
 
 
-//'name',
-//'description',
-//'price',
-//'quantity',
-//'image',
     public static function form(Form $form): Form
     {
         return $form

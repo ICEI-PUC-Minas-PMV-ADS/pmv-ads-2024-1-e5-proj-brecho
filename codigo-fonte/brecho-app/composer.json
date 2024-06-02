@@ -12,7 +12,8 @@
         "filament/filament": "^3.2",
         "filament/spatie-laravel-translatable-plugin": "^3.2",
         "laravel/framework": "^11.0",
-        "laravel/tinker": "^2.9"
+        "laravel/tinker": "^2.9",
+        "malzariey/filament-daterangepicker-filter": "^2.5"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

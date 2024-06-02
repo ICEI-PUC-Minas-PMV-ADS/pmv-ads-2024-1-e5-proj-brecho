@@ -77,6 +77,12 @@
                         </tr>
                     @endif
 
+                    @if(session('error'))
+                        <div class="bg-red-100 w-1/2 mx-auto mb-2 border border-red-400 text-red-700 px-4 py-3 rounded relative">
+                            <h5 class="text-red-500">{{ session('error') }}</h5>
+                        </div>
+                    @endif
+
                     @foreach($products as $product)
                         <tr class="odd:bg-white even:bg-gray-50">
                             <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
@@ -89,15 +95,23 @@
                                 {{ $product->price }}
                             </td>
                             <td class="px-6 py-4">
-                                {{ $product->quantity }}
+                                <div class="flex items-center">
+                                    <form action="{{ route('decrease-quantity', ['product_id' => $product->id]) }}" method="POST" class="mr-2">
+                                        @csrf
+                                        <button type="submit" class="text-white bg-red-400 px-2 rounded-full hover:text-gray-900">-</button>
+                                    </form>
+                                    {{ $product->quantity }}
+                                    <form action="{{ route('increase-quantity', ['product_id' => $product->id]) }}" method="POST" class="ml-2">
+                                        @csrf
+                                        <button type="submit" class="text-white bg-blue-400 px-2 rounded-full hover:text-gray-900">+</button>
+                                    </form>
+                                </div>
                             </td>
                             <td class="px-6 py-4">
                                 {{ $product->price * $product->quantity }}
                             </td>
                             <td class="px-6 py-4">
-                                <a
-                                    href="{{ route('remove-from-cart', ['product_id' => $product->id]) }}"
-                                   class="font-medium text-red-600">Remover</a>
+                                <a href="{{ route('remove-from-cart', ['product_id' => $product->id]) }}" class="font-medium text-red-600">Remover</a>
                             </td>
                         </tr>
                     @endforeach

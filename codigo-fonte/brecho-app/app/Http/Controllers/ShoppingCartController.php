@@ -130,4 +130,41 @@ class ShoppingCartController extends Controller
 
         return Redirect::away("https://api.whatsapp.com/send?phone=$user->phone&text=$message");
     }
+
+    public function increaseQuantity(Request $request)
+    {
+        $user = $request->user();
+        $product_id = $request->product_id;
+
+        $total_quantity = Product::where('id', $product_id)->first()->quantity;
+
+        $cart = ShoppingCart::where('user_id', $user->id)->where('product_id', $product_id)->first();
+
+        $cart->quantity += 1;
+
+        if($cart->quantity > $total_quantity) {
+            $request->session()->flash('error', 'Quantidade máxima atingida!');
+        }
+
+        if ($cart && $cart->quantity <= $total_quantity) {
+            $cart->save();
+        }
+
+        return redirect()->route('shopping-cart');
+    }
+
+    public function decreaseQuantity(Request $request)
+    {
+        $user = $request->user();
+        $product_id = $request->product_id;
+
+        $cart = ShoppingCart::where('user_id', $user->id)->where('product_id', $product_id)->first();
+
+        if ($cart && $cart->quantity > 1) {
+            $cart->quantity -= 1;
+            $cart->save();
+        }
+
+        return redirect()->route('shopping-cart');
+    }
 }
