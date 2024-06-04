@@ -43,7 +43,7 @@ class ShoppingCartController extends Controller
         $cart = ShoppingCart::where('user_id', $user->id)->where('product_id', $product['id'])->first();
 
         if ($cart) {
-            $cart->quantity += 1
+            $cart->quantity += 1;
             $cart->save();
 
             return response()->json(['message' => 'Product updated in cart']);
