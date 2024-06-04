@@ -26,6 +26,7 @@ class ShoppingCartController extends Controller
                 $total += $product->price * $item->quantity;
                 array_push($products, $product);
             }
+            $products = collect($products)->sortBy('name')->values()->all();
 
             return view('shopping-cart', ['products' => $products, 'total' => $total]);
         }
