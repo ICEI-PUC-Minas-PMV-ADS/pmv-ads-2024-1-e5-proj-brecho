@@ -12,6 +12,7 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Facades\DB;
 
 class ProductResource extends Resource
 {
@@ -44,6 +45,13 @@ class ProductResource extends Resource
                     ->placeholder('Digite a quantidade do produto')
                     ->type('number')
                     ->step('1'),
+                Forms\Components\TextInput::make('sold')
+                    ->label('Vendas')
+                    ->required()
+                    ->placeholder('Quantidade de vendas')
+                    ->type('number')
+                    ->step('1')
+                    ->disabled(),            
                 Forms\Components\Select::make('category_id')
                 ->label('Categoria')
                     ->required()
@@ -64,10 +72,6 @@ class ProductResource extends Resource
                     ->label('Nome')
                     ->searchable()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('description')
-                    ->label('Descrição')
-                    ->searchable()
-                    ->sortable(),
                 Tables\Columns\TextColumn::make('price')
                     ->label('Preço')
                     ->searchable()
@@ -75,6 +79,16 @@ class ProductResource extends Resource
                 Tables\Columns\TextColumn::make('quantity')
                     ->label('Quantidade')
                     ->searchable()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('sold')
+                    ->label('Vendas')
+                    ->getStateUsing(
+                        function (Product $record) {
+                            return DB::table('order_details')
+                                ->where('product_id', $record->id)
+                                ->sum('quantity');
+                        }
+                    )
                     ->sortable(),
                 Tables\Columns\TextColumn::make('category.name')
                     ->label('Categoria')
