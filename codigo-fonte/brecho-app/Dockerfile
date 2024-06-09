@@ -1,6 +1,6 @@
 FROM php:8.3-fpm
 
-ARG user=fael
+ARG user=brecho
 ARG uid=1000
 
 RUN apt-get update && apt-get install -y \
@@ -23,12 +23,12 @@ RUN useradd -G www-data,root -u $uid -d /home/$user $user
 RUN mkdir -p /home/$user/.composer && \
     chown -R $user:$user /home/$user
 
-WORKDIR /app
-COPY . /app
+WORKDIR /var/www
+COPY . /var/www
 RUN composer install --ignore-platform-reqs
 
 COPY docker/php/custom.ini /usr/local/etc/php/conf.d/custom.ini
-CMD php artisan serve --host=0.0.0.0 --port=8080
-EXPOSE 8080
+CMD php artisan optimize:clear && php artisan migrate --force && php artisan storage:link && php artisan serve --host=0.0.0.0 --port=80
+EXPOSE 80
 
 USER $user
