@@ -28,7 +28,7 @@ COPY . /app
 RUN composer install --ignore-platform-reqs
 
 COPY docker/php/custom.ini /usr/local/etc/php/conf.d/custom.ini
-CMD php artisan serve --host=0.0.0.0 --port=8181
-EXPOSE 8181
+CMD php artisan serve --host=0.0.0.0 --port=8080
+EXPOSE 8080
 
 USER $user
