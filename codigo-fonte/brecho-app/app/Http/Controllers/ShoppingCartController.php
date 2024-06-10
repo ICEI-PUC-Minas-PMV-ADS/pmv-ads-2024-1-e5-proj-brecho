@@ -132,7 +132,7 @@ class ShoppingCartController extends Controller
             $message .= '- ' . $item->product->name . ' - ' . $item->quantity . ' unid - ' . 'R$ ' . $item->product->price * $item->quantity . '.%0A';
         }
 
-        return Redirect::away("https://api.whatsapp.com/send?phone=$user->phone&text=$message");
+        return Redirect::away("https://api.whatsapp.com/send?phone=21981226660&text=$message");
     }
 
     public function increaseQuantity(Request $request)
