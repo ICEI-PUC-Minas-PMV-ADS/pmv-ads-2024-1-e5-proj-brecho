@@ -45,13 +45,13 @@ class ProductResource extends Resource
                     ->placeholder('Digite a quantidade do produto')
                     ->type('number')
                     ->step('1'),
-                Forms\Components\TextInput::make('sold')
-                    ->label('Vendas')
-                    ->required()
-                    ->placeholder('Quantidade de vendas')
-                    ->type('number')
-                    ->step('1')
-                    ->disabled(),            
+//                Forms\Components\TextInput::make('sold')
+//                    ->label('Vendas')
+//                    ->required()
+//                    ->placeholder('Quantidade de vendas')
+//                    ->type('number')
+//                    ->step('1')
+//                    ->disabled(),
                 Forms\Components\Select::make('category_id')
                 ->label('Categoria')
                     ->required()
