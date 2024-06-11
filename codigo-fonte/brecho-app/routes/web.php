@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ShoppingCartController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Models\Product as ProductModel;
@@ -36,3 +37,7 @@ Route::group(['prefix' => 'auth'], function () {
 
 // Relatórios
 Route::get('/admin/reports', [ReportController::class, 'generate_report'])->name('admin.reports')->middleware('auth');
+
+Route::get('/linkstorage', function () {
+    Artisan::call('storage:link');
+});
