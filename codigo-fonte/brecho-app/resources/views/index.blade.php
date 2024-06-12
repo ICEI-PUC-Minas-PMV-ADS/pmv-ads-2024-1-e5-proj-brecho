@@ -159,6 +159,22 @@
                     fontWeight: "bold"
                 },
             }).showToast();
+        } else {
+            Toastify({
+                text: "Não foi possível adicionar o produto ao carrinho!",
+                duration: 3000,
+                newWindow: true,
+                close: true,
+                gravity: "top",
+                position: "right",
+                stopOnFocus: true,
+                style: {
+                    background: "hsl(0, 100%, 63%)",
+                    borderRadius: "10px",
+                    color: "hsl(0,59%,25%)",
+                    fontWeight: "bold",
+                },
+            }).showToast();
         }
     }
 
