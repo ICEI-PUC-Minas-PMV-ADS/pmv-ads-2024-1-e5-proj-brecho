@@ -41,23 +41,39 @@ class ShoppingCartController extends Controller
         $quantity = $request->quantity;
 
         $product = Product::where('id', $product_id)->first();
-        $cart = ShoppingCart::where('user_id', $user->id)->where('product_id', $product['id'])->first();
+
+        if (!$product) {
+            return response()->json(['message' => 'Product not found'], 404);
+        }
+
+        $cart = ShoppingCart::where('user_id', $user->id)->where('product_id', $product->id)->first();
 
         if ($cart) {
-            $cart->quantity += 1;
+            $newQuantity = $cart->quantity + $quantity;
+
+            if ($newQuantity > $product->quantity) {
+                return response()->json(['message' => 'Maximum stock reached'], 400);
+            }
+
+            $cart->quantity = $newQuantity;
             $cart->save();
 
             return response()->json(['message' => 'Product updated in cart']);
         } else {
+            if ($quantity > $product->quantity) {
+                return response()->json(['message' => 'Maximum stock reached'], 400);
+            }
+
             ShoppingCart::create([
                 'user_id' => $user->id,
-                'product_id' => $product['id'],
+                'product_id' => $product->id,
                 'quantity' => $quantity
             ]);
         }
 
         return response()->json(['message' => 'Product added to cart']);
     }
+
 
     public function removeFromCart(Request $request)
     {
