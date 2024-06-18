@@ -1,4 +1,4 @@
-# Plano de Teste (Marcos Vidal)
+# Plano de Teste
 
 ## Objetivo
 Verificar a funcionalidade e a usabilidade das telas de login, produtos e pesquisa no sistema. Garantir que todas as funcionalidades principais estejam operando conforme o esperado.
