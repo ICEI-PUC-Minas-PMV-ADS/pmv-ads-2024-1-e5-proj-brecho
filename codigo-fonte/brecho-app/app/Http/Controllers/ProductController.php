@@ -65,14 +65,20 @@ class ProductController extends Controller
 
         $review = $product->reviews()->where('user_id', $request->user()->id)->first();
 
-        if($review) {
-            return view('product', ['product' => $product, 'reviews' => $product->reviews()->paginate(5), 'average_rating' => $product->averageRating()]);
-        }
-
         $request->validate([
             'rating' => 'required|integer|between:1,5',
             'comment' => 'required|string'
         ]);
+
+        if($review) {
+            $review->update([
+                'rating' => $request->rating,
+                'comment' => $request->comment
+            ]);
+
+            return view('product', ['product' => $product, 'reviews' => $product->reviews()->paginate(5), 'average_rating' => $product->averageRating()]);
+        }
+
         $product->reviews()->create([
             'user_id' => $request->user()->id,
             'rating' => $request->rating,

@@ -11,7 +11,7 @@ use App\Http\Controllers\ReportController as ReportController;
 
 Route::get('/', [ProductController::class, 'index'])->name('index');
 Route::get('/product/{id}', [ProductController::class, 'show'])->name('product');
-Route::post('/product/{id}/review', [ProductController::class, 'review'])->name('product.review')->middleware('auth');
+Route::post('/product/{id}', [ProductController::class, 'review'])->name('product.review')->middleware('auth');
 
 // Favoritos
 Route::get('/user-bookmarks', [ProductController::class, 'user_bookmarks'])->name('user-bookmarks')->middleware('auth');

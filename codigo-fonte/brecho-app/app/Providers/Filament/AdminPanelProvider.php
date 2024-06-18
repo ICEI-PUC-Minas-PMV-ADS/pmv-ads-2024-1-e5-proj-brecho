@@ -6,6 +6,7 @@ use App\Filament\Pages\Auth\Register;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
+use Filament\Navigation\MenuItem;
 use Filament\Navigation\NavigationItem;
 use Filament\Pages;
 use Filament\Panel;
@@ -58,6 +59,17 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
-            ]);
+            ])->userMenuItems(
+                [
+//                    MenuItem::make()
+//                        ->label('Relatórios')
+//                        ->url('/admin/reports')
+//                        ->icon('heroicon-c-document-arrow-down'),
+                    MenuItem::make()
+                        ->label('Ir para Área de Clientes')
+                        ->url('/')
+                        ->icon('heroicon-o-user-group'),
+                ]
+            );
     }
 }
