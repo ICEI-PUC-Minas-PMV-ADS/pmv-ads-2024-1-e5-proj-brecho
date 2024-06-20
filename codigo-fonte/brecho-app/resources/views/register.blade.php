@@ -63,5 +63,11 @@
     </div>
 </section>
 
+<script>
+    $(document).ready(function(){
+        $('[name=phone]').mask('(00) 00000-0000');
+    });
+</script>
+
 </body>
 </html>

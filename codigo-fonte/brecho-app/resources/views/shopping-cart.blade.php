@@ -148,14 +148,6 @@
                                     class="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 h-10"
                                     id="address" name="address" required="">
                             </div>
-                            <div class="grid grid-cols-1 gap-2">
-                                <label for="complement" class="block text-sm font-medium leading-5 peer">
-                                    Complemento
-                                </label>
-                                <input
-                                    class="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 h-10"
-                                    id="complement" name="complement">
-                            </div>
 
                             <div class="grid grid-cols-1 gap-2">
                                 <label for="number" class="block text-sm font-medium leading-5 peer">
@@ -166,6 +158,15 @@
                                     min="0"
                                     class="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 h-10"
                                     id="number" name="number">
+                            </div>
+
+                            <div class="grid grid-cols-1 gap-2">
+                                <label for="complement" class="block text-sm font-medium leading-5 peer">
+                                    Complemento
+                                </label>
+                                <input
+                                    class="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 h-10"
+                                    id="complement" name="complement">
                             </div>
 
                             <div class="grid grid-cols-1 gap-2">
@@ -246,6 +247,11 @@
     </div>
 
 </main>
+<script>
+    $(document).ready(function(){
+        $('[name=cep]').mask('00000-000');
+    });
+</script>
 </body>
 
 </html>
