@@ -2,7 +2,6 @@
 
 namespace App\Filament\Resources;
 
-use AbanoubNassem\FilamentPhoneField\Forms\Components\PhoneInput;
 use App\Filament\Resources\UserResource\Pages;
 use App\Filament\Resources\UserResource\RelationManagers;
 use App\Models\User;
