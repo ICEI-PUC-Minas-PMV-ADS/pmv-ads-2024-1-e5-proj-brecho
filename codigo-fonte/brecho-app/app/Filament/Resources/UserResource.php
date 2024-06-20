@@ -8,6 +8,7 @@ use App\Models\User;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
+use Filament\Support\RawJs;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
@@ -55,8 +56,10 @@ class UserResource extends Resource
                 Forms\Components\TextInput::make('phone')
                     ->label('Telefone')
                     ->required()
-                    ->placeholder('Digite o telefone do usuário')
-                    ->maxLength(255),
+                    ->mask(RawJs::make(<<<'JS'
+                        $input.length >= 14 ? '(99)99999-9999' : '(99)9999-9999'
+                    JS))
+                    ->placeholder('Digite o telefone do usuário'),
                 Forms\Components\Select::make('is_admin')
                     ->label('Tipo de Usuário')
                     ->options(static::$useres)
